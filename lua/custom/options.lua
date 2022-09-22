@@ -4,4 +4,5 @@ local opt = vim.opt
 opt.relativenumber = true
 opt.clipboard = "unnamedplus"
 opt.ruler = true
-opt.number = false
+
+vim.cmd 'autocmd! TextYankPost * lua vim.highlight.on_yank { on_visual = false }'
