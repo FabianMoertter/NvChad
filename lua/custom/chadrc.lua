@@ -4,7 +4,7 @@ M.ui = {
   transparency = true,
 }
 
-local userPlugins = require "custom.plugins" -- path to table
+-- local userPlugins = require "custom.plugins" -- path to table
 
 M.plugins = {
   -- user = userPlugins,
@@ -16,6 +16,26 @@ M.plugins = {
       require "custom.plugins.lspconfig"
     end,
   },
+  ["jose-elias-alvarez/null-ls.nvim"] = {
+    after = "nvim-lspconfig",
+    config = function()
+      require "custom.plugins.null-ls"
+    end,
+  },
+  -- run :MasonInstallAll
+  ["williamboman/mason.nvim"] = {
+    override_options = {
+      ensure_installed = {
+        "lua-language-server", -- lua
+        "stylua", -- lua
+        "pyright", -- python
+        "html-lsp", -- html
+        "css-lsp" -- css
+      },
+    },
+  },
+  ["kyazdani42/nvim-tree.lua"] = {
+  },
 }
 
 -- custom options
@@ -25,11 +45,6 @@ M.options = {
   ruler = true,
 }
 
--- custom mappings
-local opts = { noremap = true, silent = true }
-M.mappings = {
-  vim.api.nvim_set_keymap('n', '<leader>d', '"_d', opts ), -- delete text without yanking
-  vim.api.nvim_set_keymap('i', 'jj', '<ESC>', opts ), -- jj to quickly exit insert mode
-}
+M.mappings = require "custom.mappings"
 
 return M
