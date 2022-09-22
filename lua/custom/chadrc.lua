@@ -38,11 +38,10 @@ M.plugins = {
   },
 }
 
--- custom options
 M.options = {
-  relativenumber = true,
-  clipboard = "unnamedplus",
-  ruler = true,
+  user = function()
+    require "custom.options"
+  end,
 }
 
 M.mappings = require "custom.mappings"
