@@ -11,4 +11,10 @@ M.plugins = {
   },
 }
 
+M.options = {
+  relativenumber = true,
+  clipboard = "unnamedplus",
+  ruler = true,
+}
+
 return M
