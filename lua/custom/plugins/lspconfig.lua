@@ -1,7 +1,7 @@
 local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
-local lspconfig = require "lspconfig"
+local lspconfig = require "plugins.configs.lspconfig"
 local servers = { "pyright" }
 
 for _, lsp in ipairs(servers) do
