@@ -63,6 +63,7 @@ return {
   ["vimwiki/vimwiki"]= {},
   ["Pocco81/TrueZen.nvim"] = {},
   -- Override plugin definition options
+  ["numToStr/Comment.nvim"] = { ignore = '^$' },
   ["goolord/alpha-nvim"] = {
     disable = false,
     cmd = "Alpha",
