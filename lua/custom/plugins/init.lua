@@ -9,7 +9,8 @@ return {
         "stylua", -- lua
         "pyright", -- python
         "html-lsp", -- html
-        "css-lsp" -- css
+        "css-lsp", -- css
+        "black", -- python formatting
       },
     },
   },
@@ -35,12 +36,12 @@ return {
   ["tpope/vim-surround"] = {}, -- easy surround
   ["folke/todo-comments.nvim"] = {},
   ["hoschi/yode-nvim"] = {},
-  ["vimwiki/vimwiki"]= {},
+  ["vimwiki/vimwiki"] = {},
   ["Pocco81/TrueZen.nvim"] = {},
   -- Override plugin definition options
   ["numToStr/Comment.nvim"] = {
     override_options = {
-      ignore = '^$',
+      ignore = "^$",
     },
   },
   ["folke/which-key.nvim"] = {
@@ -51,7 +52,7 @@ return {
     disable = false,
     override_options = {
       cmd = "Alpha",
-    }
+    },
   },
 }
 --   -- remove plugin
