@@ -1,3 +1,5 @@
+local overrides = require "custom.plugins.overrides"
+
 return {
   -- run :MasonInstallAll
   ["williamboman/mason.nvim"] = {
@@ -25,34 +27,7 @@ return {
   },
 
   ["kyazdani42/nvim-tree.lua"] = {
-    override_options = {
-      renderer = {
-        icons = {
-          show = {
-            git = true,
-          }
-        }
-      },
-      git = {
-        enable = true,
-        ignore = true,
-        timeout = 400,
-        show_on_dirs = true,
-      },
-      ignore_ft_on_setup = { "alpha", },
-      view = {
-        hide_root_folder = false,
-        side = 'right',
-        mappings = {
-          list = { key = "u", action = "dir_up" },
-        },
-      },
-      diagnostics = { enable = true, },
-      filters = {
-        dotfiles = true,
-        exclude = {},
-      },
-    }
+    override_options = overrides.nvimtree,
   },
 
   -- install additional plugins
@@ -69,13 +44,12 @@ return {
     },
   },
   ["folke/which-key.nvim"] = {
-    override_options = {
-      disable = false,
-    }
+    disable = false,
+    override_options = {},
   },
   ["goolord/alpha-nvim"] = {
+    disable = false,
     override_options = {
-      disable = false,
       cmd = "Alpha",
     }
   },
