@@ -41,7 +41,7 @@ M.options = {
   },
 }
 ```
-I am not sure if works correctly.
+I changed it because I want to be in control of any NvChad changes in the future.
 
 All of the remaining modifications are set in the `lua/custom` directory. At last, do not
 forget to run `:MasonInstallAll`, `:PackerSync` and `:TSInstall <insert_language>` if
