@@ -3,6 +3,6 @@ local opt = vim.opt
 
 opt.relativenumber = true
 opt.clipboard = "unnamedplus"
-opt.ruler = true
+opt.ruler = false
 
 vim.cmd 'autocmd! TextYankPost * lua vim.highlight.on_yank { on_visual = false }'
