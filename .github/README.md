@@ -32,19 +32,8 @@
 ## Modifications
 I switched from maintaining my own vim/nvim config to NvChad and it is a great experience so far!
 
-I made one! modification outside of `lua/custom`, see `lua/core/default_config.lua`:
-```
-M.options = {
-  nvChad = {
-    update_url = "https://github.com/FabianMoertter/NvChad",
-    update_branch = "main",
-  },
-}
-```
-I changed it because I want to be in control of any NvChad changes in the future.
-
-All of the remaining modifications are set in the `lua/custom` directory. At last, do not
-forget to run `:MasonInstallAll`, `:PackerSync` and `:TSInstall <insert_language>` if
+All of the modifications are set in the `lua/custom` directory.
+Do not forget to run `:MasonInstallAll`, `:PackerSync` and `:TSInstall <insert_language>` if
 packages, lsp or syntax highlighting do not work properly. Enjoy and thanks to the NvChad team!
 
 

@@ -1,5 +1,9 @@
 local M = {}
 
+M.options = {
+    update_url = "https://github.com/FabianMoertter/NvChad",
+}
+
 M.ui = {
   transparency = true,
 }

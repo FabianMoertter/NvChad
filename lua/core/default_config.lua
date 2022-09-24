@@ -4,8 +4,7 @@ local M = {}
 
 M.options = {
   nvChad = {
-    update_url = "https://github.com/FabianMoertter/NvChad", -- only change outside of lua/custom
-    -- update_url = "https://github.com/NvChad/NvChad",
+    update_url = "https://github.com/NvChad/NvChad",
     update_branch = "main",
   },
 }

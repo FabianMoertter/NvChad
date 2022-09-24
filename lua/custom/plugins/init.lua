@@ -63,25 +63,22 @@ return {
   ["vimwiki/vimwiki"]= {},
   ["Pocco81/TrueZen.nvim"] = {},
   -- Override plugin definition options
-  ["numToStr/Comment.nvim"] = { ignore = '^$' },
-  ["goolord/alpha-nvim"] = {
-    disable = false,
-    cmd = "Alpha",
+  ["numToStr/Comment.nvim"] = {
+    override_options = {
+      ignore = '^$',
+    },
   },
+  ["folke/which-key.nvim"] = {
+    override_options = {
+      disable = false,
+    }
+  },
+  ["goolord/alpha-nvim"] = {
+    override_options = {
+      disable = false,
+      cmd = "Alpha",
+    }
+  },
+}
 --   -- remove plugin
 --   ["neovim/nvim-lspconfig"] = false
-
---    -- Override plugin config if it has a module called
---    -- If you wish to call a module, which is 'cmp' in this case
---    ["hrsh7th/nvim-cmp"] = {
---     override_options = function()
---       local cmp = require "cmp"
---
---       return {
---         mapping = {
---           ["<C-d>"] = cmp.mapping.scroll_docs(-8),
---         },
---       }
---     end,
---   },
-}
