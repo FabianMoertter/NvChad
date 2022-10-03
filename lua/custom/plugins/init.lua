@@ -11,6 +11,7 @@ return {
         "html-lsp", -- html
         "css-lsp", -- css
         "black", -- python formatting
+        "rnix-lsp", -- nix lsp
       },
     },
   },
@@ -38,6 +39,7 @@ return {
   ["hoschi/yode-nvim"] = {},
   ["vimwiki/vimwiki"] = {},
   ["LukeGoodsell/nextflow-vim"] = {},
+  ["LnL7/vim-nix"] = {},
   ["Pocco81/TrueZen.nvim"] = {},
   -- Override plugin definition options
   ["numToStr/Comment.nvim"] = {
