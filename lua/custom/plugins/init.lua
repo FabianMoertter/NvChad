@@ -37,6 +37,7 @@ return {
   ["folke/todo-comments.nvim"] = {},
   ["hoschi/yode-nvim"] = {},
   ["vimwiki/vimwiki"] = {},
+  ["LukeGoodsell/nextflow-vim"] = {},
   ["Pocco81/TrueZen.nvim"] = {},
   -- Override plugin definition options
   ["numToStr/Comment.nvim"] = {
